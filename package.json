@@ -1,0 +1,49 @@
+{
+  "name": "@stdlib/ndarray-base-assert-is-buffer-length-compatible",
+  "version": "0.0.0",
+  "description": "Determine if a buffer length is compatible with provided ndarray meta data.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/ndarray-base-assert-is-buffer-length-compatible.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "base",
+    "ndarray",
+    "shape",
+    "strides",
+    "offset",
+    "buffer",
+    "length",
+    "len",
+    "size",
+    "compatibility",
+    "compatible",
+    "test",
+    "assert",
+    "assertion",
+    "check",
+    "validate",
+    "validation",
+    "valid",
+    "multidimensional",
+    "array",
+    "utilities",
+    "utility",
+    "utils",
+    "util"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
