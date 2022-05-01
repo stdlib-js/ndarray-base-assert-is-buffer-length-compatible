@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-buffer-length-compatible",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "description": "Determine if a buffer length is compatible with provided ndarray meta data.",
   "license": "Apache-2.0",
   "author": {
