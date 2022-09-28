@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-assert-is-buffer-length-compatible
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isBufferLengthCompatible = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isBufferLengthCompatible = require( 'path/to/vendor/umd/ndarray-base-assert-is-buffer-length-compatible/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isBufferLengthCompatible;
-})();
-</script>
+var isBufferLengthCompatible = require( '@stdlib/ndarray-base-assert-is-buffer-length-compatible' );
 ```
 
 #### isBufferLengthCompatible( len, shape, strides, offset )
@@ -104,17 +96,12 @@ bool = isBufferLengthCompatible( 4, shape, strides, offset );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2offset@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var shape2strides = require( '@stdlib/ndarray-base-shape2strides' );
+var strides2offset = require( '@stdlib/ndarray-base-strides2offset' );
+var randu = require( '@stdlib/random-base-randu' );
+var isBufferLengthCompatible = require( '@stdlib/ndarray-base-assert-is-buffer-length-compatible' );
 
 var strides;
 var offset;
@@ -149,11 +136,6 @@ for ( i = 0; i < 100; i++ ) {
     bool = isBufferLengthCompatible( len, shape, strides, offset );
     console.log( 'Buffer length: %d. Shape: %s. Strides: %s. Offset: %d. Compatible: %s.', len, shape.join( 'x' ), strides.join( ',' ), offset, bool );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -194,11 +176,6 @@ For more information on the project, filing bug reports and feature requests, an
 [![Chat][chat-image]][chat-url]
 
 ---
-
-## License
-
-See [LICENSE][stdlib-license].
-
 
 ## Copyright
 
@@ -242,8 +219,6 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [umd-url]: https://github.com/stdlib-js/ndarray-base-assert-is-buffer-length-compatible/tree/umd
 [esm-url]: https://github.com/stdlib-js/ndarray-base-assert-is-buffer-length-compatible/tree/esm
 [branches-url]: https://github.com/stdlib-js/ndarray-base-assert-is-buffer-length-compatible/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-assert-is-buffer-length-compatible/main/LICENSE
 
 </section>
 
