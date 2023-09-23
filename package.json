@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-buffer-length-compatible",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Determine if a buffer length is compatible with provided ndarray meta data.",
   "license": "Apache-2.0",
   "author": {
@@ -39,17 +39,17 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-base-bytes-per-element": "^0.0.8",
-    "@stdlib/ndarray-base-minmax-view-buffer-index": "^0.0.8",
-    "@stdlib/ndarray-dtypes": "^0.0.9",
-    "@stdlib/types": "^0.0.14",
-    "@stdlib/utils-library-manifest": "^0.0.8"
+    "@stdlib/ndarray-base-bytes-per-element": "^0.1.0",
+    "@stdlib/ndarray-base-minmax-view-buffer-index": "^0.1.0",
+    "@stdlib/ndarray-dtypes": "^0.1.0",
+    "@stdlib/types": "^0.1.0",
+    "@stdlib/utils-library-manifest": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.0.8",
-    "@stdlib/bench": "^0.0.12",
-    "@stdlib/ndarray-base-shape2strides": "^0.0.8",
-    "@stdlib/ndarray-base-strides2offset": "^0.0.8",
+    "@stdlib/assert-is-boolean": "^0.1.0",
+    "@stdlib/bench": "^0.1.0",
+    "@stdlib/ndarray-base-shape2strides": "^0.1.0",
+    "@stdlib/ndarray-base-strides2offset": "^0.1.0",
     "@stdlib/random-base-discrete-uniform": "^0.0.6",
     "@stdlib/random-base-randu": "^0.0.8",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
