@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,23 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var minmax = require( '@stdlib/ndarray-base-minmax-view-buffer-index' );
-
-
-// MAIN //
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
 * Returns a boolean indicating if a buffer length is compatible with provided ndarray meta data.
 *
-* @param {NonNegativeInteger} len - buffer length
-* @param {NonNegativeIntegerArray} shape - array shape
-* @param {IntegerArray} strides - stride array
-* @param {NonNegativeInteger} offset - index offset
-* @returns {boolean} boolean indicating if a buffer length is compatible
+* @param len - buffer length
+* @param shape - array shape
+* @param strides - stride array
+* @param offset - index offset
+* @returns boolean indicating if a buffer length is compatible
 *
 * @example
 * var shape = [ 2, 2 ];
@@ -50,15 +47,9 @@ var minmax = require( '@stdlib/ndarray-base-minmax-view-buffer-index' );
 * var bool = isBufferLengthCompatible( 4, shape, strides, offset );
 * // returns false
 */
-function isBufferLengthCompatible( len, shape, strides, offset ) {
-	// Determine the minimum and maximum linear indices which are accessible by the array view:
-	var buf = minmax( shape, strides, offset );
-
-	// If the indices are "inbounds", then the buffer length is compatible:
-	return ( buf[ 0 ] >= 0 && buf[ 1 ] < len );
-}
+declare function isBufferLengthCompatible( len: number, shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number ): boolean; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
 
-module.exports = isBufferLengthCompatible;
+export = isBufferLengthCompatible;
