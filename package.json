@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-buffer-length-compatible",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Determine if a buffer length is compatible with provided ndarray meta data.",
   "license": "Apache-2.0",
   "author": {
@@ -40,21 +40,21 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-bytes-per-element": "^0.2.1",
-    "@stdlib/ndarray-base-minmax-view-buffer-index": "^0.2.1",
+    "@stdlib/ndarray-base-minmax-view-buffer-index": "^0.2.2",
     "@stdlib/ndarray-dtypes": "^0.2.1",
     "@stdlib/types": "^0.3.2",
-    "@stdlib/utils-library-manifest": "^0.2.1"
+    "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.2.1",
-    "@stdlib/ndarray-base-shape2strides": "^0.2.1",
-    "@stdlib/ndarray-base-strides2offset": "^0.2.1",
+    "@stdlib/assert-is-boolean": "^0.2.2",
+    "@stdlib/ndarray-base-shape2strides": "^0.2.2",
+    "@stdlib/ndarray-base-strides2offset": "^0.2.2",
     "@stdlib/random-base-discrete-uniform": "^0.2.1",
     "@stdlib/random-base-randu": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
+    "@stdlib/bench-harness": "^0.2.2"
   },
   "engines": {
     "node": ">=0.10.0",
