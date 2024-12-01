@@ -42,7 +42,7 @@
     "@stdlib/ndarray-base-bytes-per-element": "^0.2.2",
     "@stdlib/ndarray-base-minmax-view-buffer-index": "^0.2.2",
     "@stdlib/ndarray-dtypes": "^0.3.0",
-    "@stdlib/types": "^0.4.1",
+    "@stdlib/types": "^0.4.3",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
