@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isBufferLengthCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible@esm/index.mjs';
+import isBufferLengthCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible@v0.1.3-esm/index.mjs';
 ```
 
 #### isBufferLengthCompatible( len, shape, strides, offset )
@@ -101,7 +101,7 @@ import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-d
 import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@esm/index.mjs';
 import strides2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2offset@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import isBufferLengthCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible@esm/index.mjs';
+import isBufferLengthCompatible from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible@v0.1.3-esm/index.mjs';
 
 var strides;
 var offset;
