@@ -1,5 +1,38 @@
-"use strict";var n=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(t){throw (r=0, t)}};};var s=n(function(p,u){
-var f=require('@stdlib/ndarray-base-minmax-view-buffer-index/dist');function m(e,r,t,a){var i=f(r,t,a);return i[0]>=0&&i[1]<e}u.exports=m
-});var o=s();module.exports=o;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Return a boolean indicating if a buffer length is compatible with provided ndarray meta data.
+*
+* @module @stdlib/ndarray-base-assert-is-buffer-length-compatible
+*
+* @example
+* var isBufferLengthCompatible = require( '@stdlib/ndarray-base-assert-is-buffer-length-compatible' );
+*
+* var shape = [ 2, 2 ];
+* var strides = [ 2, 1 ];
+* var offset = 0;
+*
+* var bool = isBufferLengthCompatible( 4, shape, strides, offset );
+* // returns true
+*
+* @example
+* var isBufferLengthCompatible = require( '@stdlib/ndarray-base-assert-is-buffer-length-compatible' );
+*
+* var shape = [ 2, 2 ];
+* var strides = [ 2, 1 ];
+* var offset = 2;
+*
+* var bool = isBufferLengthCompatible( 4, shape, strides, offset );
+* // returns false
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
